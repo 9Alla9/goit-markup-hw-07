@@ -1,0 +1,126 @@
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  /* -----------------------header----------------------- */
+  .header-list {
+    display: none;
+  }
+  .header-info {
+    display: none;
+  }
+
+  .header > .container {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/people-office-mob.jpg);
+    padding-top: 112px;
+    padding-bottom: 112px;
+    width: 100%;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/people-office-mob-2x.jpg);
+    }
+  }
+  .hero-caption {
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  /*----------------------about ----------------------*/
+  .about-section {
+    display: none;
+  }
+  /* ---------------text----------------------- */
+  .text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding-bottom: 96px;
+  }
+  .text-title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  .text-quote {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .features-div {
+    display: none;
+  }
+  .text-quot {
+    width: 396px;
+  }
+  .header-list-info {
+    display: none;
+  }
+  /*---------------------user------------------- */
+  .user-list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  /* -------------------clients----------------- */
+
+  .clients-item {
+    width: calc((100% - 16px) / 2);
+  }
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 72px 16px;
+  }
+  /*-----------------------footer-------------------*/
+  .footer div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo-footer {
+    display: flex;
+    align-items: center;
+  }
+  .footer-media {
+    margin-top: 72px;
+    align-items: center;
+  }
+  .online {
+    margin-left: 0;
+  }
+  .online-form {
+    justify-content: center;
+    gap: 16px;
+  }
+  .online-input {
+    width: 100%;
+    margin-right: 0;
+  }
+  /* -------------------modal--------------------- */
+  .modal {
+    width: 392px;
+  }
+}

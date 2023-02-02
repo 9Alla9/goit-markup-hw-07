@@ -1,0 +1,128 @@
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  /* -------------------header------------------------ */
+  .header-info {
+    display: flex;
+    gap: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    flex-direction: row;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/people-office-des.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/people-office-des-2x.jpg);
+      width: 1158px;
+    }
+  }
+  /* ----------------text---------------------- */
+  .text {
+    padding-top: 120px;
+  }
+  .text-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .text-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .text-title {
+    color: var(--title-color);
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .text-quote {
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  .features-div {
+    padding: 24px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  /*-------------- user---------------------*/
+  .user-item {
+    background: #ffffff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .user-quote {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+    color: #434455;
+    flex: none;
+    margin-bottom: 8px;
+  }
+  .user-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /*----------------------------.about ------------------*/
+  .about-section {
+    display: initial;
+  }
+  .about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-color);
+    padding-bottom: 72px;
+    padding-top: 0;
+  }
+
+  .about-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  /* ------------------footer----------- */
+  .online {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 0;
+  }
+}
