@@ -145,11 +145,14 @@ img {
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: 1;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 15px;
 }
 .mob-menu > .container {
   height: 100%;
@@ -176,10 +179,10 @@ img {
 .mob-menu-item:not(:last-child) {
   margin-bottom: 24px;
 }
-.mob-menu-link {
+.mob-link {
   font-weight: 700;
   color: #2e2f42;
-  font-size: 36px;
+  font-size: 34px;
   line-height: calc(40 / 36);
   display: flex;
   flex-direction: row;
@@ -199,7 +202,7 @@ img {
 }
 .mob-menu-tel {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 40px;
   text-transform: capitalize;
   color: #434455;
@@ -208,13 +211,12 @@ img {
 .mob-menu-tel:hover {
   color: #4d5ae5;
 }
-.mob-menu-link:hover {
+.mob-link:hover {
   color: #404bbf;
 }
 .mob-soc-list {
   display: flex;
-  justify-content: center;
-  gap: 56px;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -764,6 +766,7 @@ img {
   padding-left: 16px;
   padding-top: 8px;
   resize: none;
+  margin-bottom: 14px;
 }
 .modal-comment::placeholder {
   font-weight: 400;
@@ -771,15 +774,17 @@ img {
   line-height: 16px;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .link-policy {
   margin-left: 3px;
 }
 .check-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   color: #757575;
   display: flex;
+  flex-wrap: wrap;
 }
 .check-text span {
   width: 16px;
