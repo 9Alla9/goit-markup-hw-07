@@ -17,8 +17,14 @@
     margin-bottom: 24px;
     flex-direction: row;
   }
+  .header-mailto,
+  .header-tel {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(16 / 24);
+  }
   .hero {
-    width: 1158px;
+    width: 1400px;
   }
   .hero {
     background-image: linear-gradient(
@@ -37,7 +43,6 @@
           rgba(46, 47, 66, 0.7)
         ),
         url(../img/people-office-des-2x.jpg);
-      width: 1158px;
     }
   }
   /* ----------------text---------------------- */
@@ -127,5 +132,19 @@
     flex-direction: column;
     margin-left: 80px;
     margin-top: 0;
+    margin-right: 0;
+  }
+  .footer > .container {
+    width: 1158px;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .logo-footer {
+    margin-right: 120px;
+    flex-direction: column;
+  }
+  .online-form {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
