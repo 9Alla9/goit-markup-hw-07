@@ -120,4 +120,13 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+  /* _______________Portfolio______________________ */
+  .project-item {
+    height: 420px;
+    width: calc((100% - 24px) / 2);
+  }
+  .project-list {
+    display: flex;
+    justify-content: flex-start;
+  }
 }

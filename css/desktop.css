@@ -147,4 +147,9 @@
     display: flex;
     flex-wrap: nowrap;
   }
+
+  /* ------------------------Portfolio------------------- */
+  .project-item {
+    height: 420px;
+  }
 }

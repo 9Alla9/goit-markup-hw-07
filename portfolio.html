@@ -23,26 +23,27 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
-  <body class="site-body">
+  <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo-web link"
             >Web<span class="header-logo-studio link">Studio</span></a
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a class="header-link link" href="./index.html">Studio</a>
+              <a class="header-link link current" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link current" href="./portfolio.html">Portfolio</a>
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="/">Contacts</a>
+              <a class="header-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-list list">
+
+        <ul class="header-info list">
           <li class="header-item">
             <a class="header-mailto link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -50,10 +51,86 @@
           </li>
           <li class="header-item">
             <a class="header-tel link" href="tel:+110001111111"
-              >11(000)111-11-11</a
+              >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
+
+        <button type="button" class="menu-open" data-Menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./img/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-Menu>
+        <div class="container">
+
+    <div class="mob-menu-top">
+        <button type="button" class="menu-close" data-Menu-close>
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./img/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-link link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-link link" href="">Contacts</a>
+            </li>
+          </ul>
+    </div>
+        </nav>
+
+    <div class="mob-menu-bottom"> 
+        <ul class="mob-menu-info list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-tel link" href="tel:+110001111111"
+              >11(000)111-11-11</a
+            >
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-mailto link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-item">
+                    <a href="" class="mob-soc-link link">
+                      <svg class="mob-soc-icon" width="24" height="24">
+                        <use href="./img/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-soc-item">
+                    <a href="" class="mob-soc-link link">
+                      <svg class="mob-soc-icon" width="24" height="24">
+                        <use href="./img/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-soc-item">
+                    <a href="" class="mob-soc-link link">
+                      <svg class="mob-soc-icon" width="24" height="24">
+                        <use href="./img/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </div> 
+
+        </div>
       </div>
     </header>
     <main>
@@ -84,6 +161,7 @@
                       <img
                         src="./img/functions1.jpg"
                         alt="applications"
+                        srcset="./img/functions-1x.jpg 1x, ./img/functions-2x.jpg 2x"
                         width="360"
                       />
                       <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -101,6 +179,7 @@
                       <img
                         src="./img/functions2.jpg"
                         alt="payment"
+                        srcset="./img/functi1-1x.jpg 1x, ./img/functi1-2x.jpg 2x"
                         width="360"
                       />
                       <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -116,6 +195,7 @@
                     <img
                       src="./img/functions3.jpg"
                       alt="meditaion"
+                      srcset="./img/fun-1x.jpg 1x, ./img/fun-2x.jpg 2x"
                       width="360"
                       />
                     <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -131,6 +211,7 @@
                     <img
                         src="./img/functions4.jpg"
                         alt="taxi"
+                        srcset="./img/functions1-1x.jpg 1x, ./img/functions1-2x.jpg 2x"
                         width="360"
                       />
                     <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -146,6 +227,7 @@
                       <img
                         src="./img/functions5.jpg"
                         alt="illustrations"
+                        srcset="./img/funct1-1x.jpg 1x, ./img/funct1-2x.jpg 2x"
                         width="360"
                       />
                     <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -161,6 +243,7 @@
                     <img
                       src="./img/functions6.jpg"
                       alt="courses"
+                      srcset="./img/funct-1x.jpg 1x, ./img/funct-2x.jpg 2x"
                       width="360"
                     />
                   <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -175,7 +258,8 @@
                 <div class="project-top-wrap">                         
                     <img
                       src="./img/functions7.jpg"
-                      alt="instagram "
+                      alt="instagram"
+                      srcset="./img/functi-1x.jpg 1x, ./img/functi-2x.jpg 2x"
                       width="360"
                     />
                   <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -191,6 +275,7 @@
                     <img
                       src="./img/functions8.jpg"
                       alt="food"
+                      srcset="./img/functio-1x.jpg 1x, ./img/functio-2x.jpg 2x"
                       width="360"
                     />
                   <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -206,6 +291,7 @@
                   <img
                     src="./img/functions9.jpg"
                     alt="coffee"
+                    srcset="./img/function-1x.jpg 1x, ./img/function-2x.jpg 2x"
                     width="360"
                   />
                   <p class="project-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>

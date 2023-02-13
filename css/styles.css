@@ -623,7 +623,7 @@ img {
 }
 .project-item {
   max-width: 360px;
-  height: 420px;
+  /* height: 420px; */
   margin-bottom: 30px;
 }
 .project-item:hover .project-top-text {
